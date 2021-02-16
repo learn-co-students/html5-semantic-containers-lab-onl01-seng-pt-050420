@@ -81,7 +81,7 @@ end
       expect(footer).to_not be_nil, "No <footer> tag was found"
       expect(html_file_contents).to include('</footer>'), "No closing </footer> tag was found"
     end
-
+ 
     context 'within <footer>' do
       it 'contains an <address> tag' do
         address = parsed_html.search('address')[0]
